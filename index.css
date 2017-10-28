@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Grad"; }
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  position: relative; }
+
+.space-above {
+  margin-top: 10px; }
+
+.main-nav {
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #232932;
+  z-index: 1000; }
+  .main-nav .logo {
+    color: #e1bb60;
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: none; }
+    .main-nav .logo span {
+      margin-left: 3px;
+      color: #ffffff; }
+  .main-nav .menu {
+    height: 30px;
+    width: 40px;
+    position: absolute;
+    right: 0;
+    top: 20px; }
+    .main-nav .menu .gold, .main-nav .menu .white1, .main-nav .menu .white2 {
+      position: absolute;
+      right: 0; }
+    .main-nav .menu .gold {
+      height: 5px;
+      width: 100%;
+      background: #e1bb60;
+      top: 0; }
+    .main-nav .menu .white1 {
+      height: 5px;
+      width: 70%;
+      background: #ffffff;
+      top: 50%;
+      transform: translateY(-50%); }
+    .main-nav .menu .white2 {
+      height: 5px;
+      width: 40%;
+      background: #ffffff;
+      bottom: 0; }
+
+header {
+  height: 600px;
+  background: #232932;
+  position: relative; }
+  header .main-title {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    line-height: 20px;
+    font-size: 50px; }
+    header .main-title h1:first-child {
+      color: #ffffff; }
+    header .main-title h1:last-child {
+      color: #e1bb60; }
+  header .cta {
+    position: absolute;
+    top: 70%;
+    left: 29%;
+    width: 100%;
+    transform: translateY(-50%);
+    text-align: left; }
+    header .cta a {
+      display: block;
+      text-decoration: none;
+      margin: 10px 0; }
+      header .cta a:first-child {
+        color: #e1bb60; }
+      header .cta a:last-child {
+        color: #ffffff;
+        margin-bottom: 0; }
+
+/*# sourceMappingURL=index.css.map */
