@@ -7,7 +7,6 @@ require "header.php";
 // body files
 include_once "partials/_nav.php";
 include_once "partials/_hero.php";
-include_once "partials/_about.php";
 include_once "partials/_design.php";
 include_once "partials/_development.php";
 include_once "partials/_writing.php";

@@ -1,3 +1,15 @@
+.main-color {
+  color: #ffffff; }
+
+.color1 {
+  color: #e1bb60; }
+
+.color2 {
+  color: #232932; }
+
+.color3 {
+  color: #e91e44; }
+
 body {
   margin: 0;
   padding: 0;
@@ -53,37 +65,64 @@ body {
       background: #ffffff;
       bottom: 0; }
 
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translateY(-50%);
+  width: 80%; }
+  .text-container .big-title {
+    margin: 0;
+    padding: 0;
+    font-size: 55px;
+    line-height: 18px;
+    font-weight: bold; }
+    .text-container .big-title h1 {
+      width: 100%; }
+    .text-container .big-title h2 {
+      font-size: 28px;
+      font-weight: 600; }
+      .text-container .big-title h2 a {
+        text-decoration: none;
+        color: inherit; }
+        .text-container .big-title h2 a:hover {
+          text-decoration: underline; }
+  .text-container .cta a {
+    display: block;
+    text-decoration: none;
+    margin: 10px 0; }
+    .text-container .cta a:first-child {
+      margin-top: 60px; }
+    .text-container .cta a:hover {
+      text-decoration: underline; }
+
 header {
   height: 600px;
   background: #232932;
   position: relative; }
-  header .main-title {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: left;
-    line-height: 20px;
-    font-size: 50px; }
-    header .main-title h1:first-child {
-      color: #ffffff; }
-    header .main-title h1:last-child {
-      color: #e1bb60; }
-  header .cta {
-    position: absolute;
-    top: 70%;
-    left: 29%;
-    width: 100%;
-    transform: translateY(-50%);
-    text-align: left; }
-    header .cta a {
-      display: block;
-      text-decoration: none;
-      margin: 10px 0; }
-      header .cta a:first-child {
-        color: #e1bb60; }
-      header .cta a:last-child {
-        color: #ffffff;
-        margin-bottom: 0; }
+
+#design {
+  height: 600px;
+  background: #e91e44;
+  position: relative; }
+
+#development {
+  height: 600px;
+  background: #e1bb60;
+  position: relative; }
+
+#writing {
+  height: 600px;
+  background: #232932;
+  position: relative; }
+
+#contact {
+  height: 600px;
+  background: #e91e44;
+  position: relative; }
+
+footer {
+  height: 50px;
+  background: #e1bb60; }
 
 /*# sourceMappingURL=index.css.map */

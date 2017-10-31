@@ -4,6 +4,32 @@ $gold: #e1bb60;
 $blue: #232932;
 $red: #e91e44;
 
+.main-color {
+  color: $white;
+}
+.color1 {
+  color: $gold;
+}
+.color2 {
+  color: $blue;
+}
+.color3 {
+  color: $red;
+}
+
+@mixin offcenter {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translateY(-50%);
+  width: 80%;
+}
+
+@mixin section($color) {
+  height: 600px;
+  background: $color;
+  position: relative;
+}
 body {
   margin: 0;
   padding: 0;
@@ -77,49 +103,73 @@ body {
   }
 }
 
-header {
-  height: 600px;
-  background: $blue;
-  position: relative;
+.text-container {
+  @include offcenter;
 
-  .main-title {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: left;
-    line-height: 20px;
-    font-size: 50px;
+  .big-title {
+    margin: 0;
+    padding: 0;
+    font-size: 55px;
+    line-height: 18px;
+    font-weight: bold;
 
-    h1:first-child {
-      color: $white;
+    h1 {
+      width: 100%;
     }
-    h1:last-child {
-      color: $gold;
+
+    h2 {
+      font-size: 28px;
+      font-weight: 600;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
   }
-
   .cta {
-    position: absolute;
-    top: 70%;
-    left: 29%;
-    width: 100%;
-    transform: translateY(-50%);
-    text-align: left;
-
     a {
       display: block;
       text-decoration: none;
       margin: 10px 0;
 
       &:first-child {
-        color: $gold;
+        margin-top: 60px;
       }
 
-      &:last-child {
-        color: $white;
-        margin-bottom: 0;
+      &:hover {
+        text-decoration: underline;
       }
     }
   }
+}
+
+header {
+  @include section($blue);
+}
+
+#design {
+  @include section($red);
+}
+
+#development {
+  @include section($gold);
+}
+
+#writing {
+  @include section($blue);
+}
+
+#contact {
+  @include section($red);
+}
+
+footer {
+  height: 50px;
+  background: $gold;
+
 }
