@@ -118,11 +118,18 @@ a {
   color: #ffffff;
 }
 
-.launch, .destination, .contact {
+.launch, .destination {
   height: 700px;
   background: #f2f2f7;
   color: #2b2b3a;
   position: relative;
+}
+
+.contact { 
+  height: 400px; 
+  background: #df2935; 
+  color: #fdca40;
+  position: relative; 
 }
 
 .launch a, .destination a, .contact a {
